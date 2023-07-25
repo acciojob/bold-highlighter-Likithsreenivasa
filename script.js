@@ -28,6 +28,8 @@ function return_normal() {
 			}
 	
 }
-const highlightLink = document.getElementById('highlightLink');
-highlightLink.addEventListener('mouseover', highlight);
-highlightLink.addEventListener('mouseout', return_normal);
+const paragraph = document.querySelector('p');
+
+// Attach event listeners to the paragraph
+paragraph.addEventListener('mouseover', highlight);
+paragraph.addEventListener('mouseout', return_normal);
