@@ -6,7 +6,7 @@ function highlight() {
 			const textWrapper=document.createElement('span');
 			textWrapper.textContent=element.textContent;
 			element.textContent=""
-			textWrapper.style.color='green';
+			textWrapper.style.color='rgb(0,128,0)';
 			element.appendChild(textWrapper);
 			
 		}
@@ -28,3 +28,6 @@ function return_normal() {
 			}
 	
 }
+const highlightLink = document.getElementById('highlightLink');
+highlightLink.addEventListener('mouseover', highlight);
+highlightLink.addEventListener('mouseout', return_normal);
